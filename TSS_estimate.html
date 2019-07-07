@@ -1,8 +1,356 @@
 <!Doctype html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Times New Roman, sans-serif;
+  }
+
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.cp-price {
+  background-color: #BDBDBD;
+  float: center;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 75px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+}
+
+.ws-price {
+  background-color: #F79B01;
+  float: center;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 75px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+}
+
+.dimensions {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: solid;
+  border-color: black;
+  cursor: pointer;
+}
+
+.dimensions {
+  position: relative;
+  display: inline-block;
+}
+
+.dimensions-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dimensions-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.btn_dimensions {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_dimensions {
+  position: relative;
+  display: inline-block;
+}
+
+.btn_dimensions-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.btn_dimensions-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.main_options {
+  background-color: #CB6868;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: solid;
+  border-color: black;
+  cursor: pointer;
+}
+
+.main_options {
+  position: relative;
+  display: inline-block;
+}
+
+.main_options-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.main_options-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.main_dimensions {
+  background-color: #CB6868;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.main_dimensions {
+  position: relative;
+  display: inline-block;
+}
+
+.main_dimensions-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.main_dimensions-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.ws_options {
+  background-color: #688FCB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: solid;
+  border-color: black;
+  cursor: pointer;
+}
+
+.ws_options {
+  position: relative;
+  display: inline-block;
+}
+
+.ws_options-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.ws_options-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.ws_dimensions {
+  background-color: #688FCB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.ws_dimensions {
+  position: relative;
+  display: inline-block;
+}
+
+.ws_dimensions-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.ws_dimensions-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+  </style>
+</head>
+
 <html>
+ 
+  <img src="/Users/dannymagana/Documents/Website/TSS/Photos/tbanner.png" width=2500 height=651>
+
+  <div class="topnav">
+    <a class="tnbutton01" href="file:///Users/dannymagana/Documents/Website/TSS/TSS_home.html">Home</a>
+    <a class="tnbutton02" href="file:///Users/dannymagana/Documents/Website/TSS/TSS_gallery.html">Gallery</a>
+    <a class="tnbutton03" href="file:///Users/dannymagana/Documents/Website/TSS/TSS_estimate.html">Estimate</a>
+    <a class="tnbutton04" href="file:///Users/dannymagana/Documents/Website/TSS/TSS_contact_us.html">Contact Us</a>
+  </div>
+
 
 <h1>Texas Star Steel Estimate page</h1>
   <p>This is the place where a "interactive" 3D section will be added... eventually until commisioned... 
   but for now a spredsheet that can link to a already made pdf</p>
+
+  <body>
+    
+    <div class="dimensions">
+
+      <!-- Type of Carport chooser -->
+      <select class="btn_dimensions" id="type_of_carport" onchange="cpFunction()">
+        <option value="0">Carport Type</option>
+        <option value="1">Standard</option>
+        <option value="2">Commercial</option>
+        <option value="3">Tripple-Wide</option>
+      </select>
+
+    </div>
+
+    <div class="main_options">
+
+      <!-- Style of Carport chooser -->
+      <select class="main_dimensions" id="style_of_carport" onchange="cpFunction()">
+        <option value="0">Carport Style</option>
+        <option value="1">Regular</option>
+        <option value="2">A-Frame</option>
+        <option value="3">Vertical Roof</option>
+      </select>
+
+      <!--length dimension chooser-->
+      <select class="main_dimensions" id="obj_length" onchange="cpFunction()">
+        <option value="0">Length</option>
+        <option value="12">12'</option>
+        <option value="18">18'</option>
+        <option value="20">20'</option>
+        <option value="22">22'</option>
+        <option value="24">24'</option>
+      </select>
+      
+      <!--Width dimention chooser-->
+      <select class="main_dimensions" id="obj_width" onchange="cpFunction()">
+        <option value="0">Width</option>
+        <option value="21">21'</option>
+        <option value="26">26'</option>
+        <option value="31">31'</option>
+        <option value="36">36'</option>
+        <option value="41">41'</option>
+      </select>
+      
+    </div>
+
+    <div class="ws_options">
+
+      <!-- Wind/Snow rating package dimensions -->
+      <select class="ws_dimensions" id="ws_check" onchange="cpFunction()">
+        <option value="0">Wind/Snow</option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+      </select>
+
+      <select class="ws_dimensions" id="ws_length" onchange="cpFunction()">
+        <option value="0">Length</option>
+        <option value="21">21'</option>
+        <option value="26">26'</option>
+        <option value="31">31'</option>
+        <option value="36">36'</option>
+        <option value="41">41'</option>
+      </select>
+
+      <select class="ws_dimensions" id="ws_height" onchange="cpFunction()">
+        <option value="0">Height</option>
+        <option value="1">6'- 8'</option>
+        <option value="2">9'- 12'</option>
+        <option value="3">13'- 14'</option>
+      </select>
+
+    </div>
+
+    <h1>heading 1</h1>
+
+      <p class="cp-price"> Carport Style price: $<b id="demo1">0</b></p>
+
+    <h2>heading 2</h2>
+
+      <p class="ws-price"> Wind/Snow dimensions price: $<b id="demo2">0</b></p>
+
+  </body>
+
+  <script>
+
+  </script>
+
+  <script src="file:///Users/dannymagana/Documents/Website/TSS/regular_carports_type_price_by_size.js"></script>
 
 </html>
